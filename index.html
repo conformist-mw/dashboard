@@ -83,7 +83,7 @@
         var seconds = seconds - minutes * 60;
         return minutes + 'мин. ' + seconds + 'сек.';
     }
-    $.getJSON('http://localhost:5000/get_json.json', function(data){
+    $.getJSON('https://tranquil-escarpment-73800.herokuapp.com/get_json.json', function(data){
     var tasks = data['tasks'];
     var last_task = data['last_task'];
     var first_task = data['first_task'];

@@ -18,18 +18,23 @@
 }
 .header + p {
   padding: 10px;
-  font-size: 24px;
-  color: white;
+  font-size: 32px;
+  color: #4caf50;
+  font-weight: bold;
 }
 .blue {
-  background-color: #308dcc;
+  background-color: rgba(76, 175, 80, 0.1);
 }
 .aqua {
-  background-color: #00a792;
+  background-color: rgba(0, 150, 136, 0.1);
 }
 tr td:first-child {
   text-align: left;
 }
 tr td {
   text-align: center;
+}
+footer a {
+  color: #426E9E;
+  font-size: 18px;
 }

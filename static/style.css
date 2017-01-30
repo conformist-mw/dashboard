@@ -1,54 +1,35 @@
-body {
-  -webkit-font-smoothing: antialiased;
-  text-align: center;
-}
-.chart {
-  position: relative;
-  display: inline-block;
-  width: 110px;
-  height: 110px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-size: 22px;
-}
-.chart canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.percent {
-  display: inline-block;
-  line-height: 110px;
-  z-index: 2;
-}
-.percent:after {
-  content: '%';
-  margin-left: 0.1em;
-  font-size: .8em;
-}
-.inner_text {
-  padding: 13px;
-  height: 45px;
-  background-color: rgba(255,255,255,0.5);
-}
-h1 {
-  margin-bottom: 45px;
+.main_title {
+  margin-top: 45px;
 }
 .tasks {
-  border: 1px;
-  border-radius: 10px;
-  margin-bottom: 40px;
+  margin-top: 25px;
+  margin-bottom:  25px;
 }
-.green {
-  background-color: #2ecc71;
+.info {
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 100px;
 }
-.aqua {
-  background-color: #00bca4;
+.header {
+  font-size: 18px;
+  padding: 5px;
+  background-color: rgba(255,255,255,0.5);
+}
+.header + p {
+  padding: 10px;
+  font-size: 24px;
+  color: white;
 }
 .blue {
-  background-color: #3498db;
+  background-color: #308dcc;
 }
-.time_info {
-  font-size: 48px;
+.aqua {
+  background-color: #00a792;
+}
+tr td:first-child {
+  text-align: left;
+}
+tr td {
+  text-align: center;
 }

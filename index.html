@@ -7,76 +7,68 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <title>Графики!</title>
+    <title>Dashboard | DEVMAN</title>
     <link rel="stylesheet" href="static/bootstrap.min.css">
     <link rel="stylesheet" href="static/style.css">
   </head>
   <body>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <span class="navbar-brand">DEVMAN</span>
-      </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="htpps://devman.org">На сайт</a></li>
-        <li><a href="#">Энциклопедия</a></li>
-        <li><a href="#">Slack-чат</a></li>
-      </ul>
-    </div>
-  </nav>
  <div class="container">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <h1><span class="bg-primary"><b>DEVMAN</b></span> DashBoard</h1>
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <h1 class="main_title"><b>DEVMAN</b> DashBoard</h1>
       </div>
-      <div class="col-md-10 col-md-offset-1">
-      <div class="col-md-4">
-        <div class="tasks green">
-          <div class="inner_text">
-            <p class="text-uppercase">Всего сдано задач</p>
-          </div>
-          <span id="all_tasks" class="chart" data-percent="0">
-            <span class="percent"></span>
-          </span>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="tasks aqua">
-          <div class="inner_text">
-            <p class="text-uppercase">Проверено сегодняшних задач   </p>
-          </div>
-          <span id="today_tasks" class="chart" data-percent="0">
-            <span class="percent"></span>
-          </span>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="tasks blue">
-          <div class="inner_text">
-            <p class="text-uppercase">Не сданы с первого раза</p>
-          </div>
-          <span id="retry_tasks" class="chart" data-percent="0">
-            <span class="percent"></span>
-          </span>
-        </div>
-      </div>
-      </div>
-      <div class="col-md-10 col-md-offset-1">
+      <div class="col-md-10 col-md-offset-1 text-center tasks">
         <div class="col-md-6">
-          <h3>Последнее задание было проверено: </h3>
-          <p><span class="text-success time_info" id="last" data-last=""></span></p>
+          <div class="col-md-8 col-md-offset-2 info blue">
+            <div class="header">
+              <span>Всего сегодня сдано</span>
+            </div>
+            <p>456</p>
+          </div>
         </div>
-        <div class="col-md-6 text-center">
-          <h3>Первое задание было добавлено: </h3>
-          <p><span class="text-danger time_info" id="first" data-first=""></span></p>
+        <div class="col-md-6">
+          <div class="col-md-8 col-md-offset-2 info aqua">
+            <div class="header">
+              <span>Всего сегодня проверено</span>
+            </div>
+            <p>654</p>
+          </div>
         </div>
+      </div>
+      <div class="col-md-10 col-md-offset-1 table-striped">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="col-md-6">Задача</th>
+              <th class="col-md-2">На первичной проверке</th>
+              <th class="col-md-2">На повторной проверке</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-md-6">4 json</td>
+              <td class="col-md-2">25</td>
+              <td class="col-md-2">65</td>
+            </tr>
+            <tr>
+              <td class="col-md-6">5 lang frequency</td>
+              <td class="col-md-2">25</td>
+              <td class="col-md-2">65</td>
+            </tr>
+            <tr>
+              <td class="col-md-6">6 password sthrengh</td>
+              <td class="col-md-2">25</td>
+              <td class="col-md-2">65</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
   <script src="static/jquery.min.js"></script>
+  <!-- <script src="static/jquery.easypiechart.min.js"></script> -->
   <script src="static/bootstrap.min.js"></script>
-  <script src="static/jquery.easypiechart.min.js"></script>
-  <script>
+<!--   <script>
     function getTime(seconds){
         var minutes = Math.floor(seconds / 60);
         var seconds = seconds - minutes * 60;
@@ -102,6 +94,6 @@
       });
     })
   });
-  </script>
+  </script> -->
   </body>
 </html>

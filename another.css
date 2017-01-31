@@ -23,31 +23,21 @@ footer a {
   color: #426E9E;
   font-size: 18px;
 }
-.fraction {
-  width: 60px;
-  float: left;
-  margin-left: 5%;
-}
-.fraction p {
-  font-size: 24px;
-  line-height: 0;
-}
-.fraction p:first-child {
-  color: #308dcc;
-}
 .out {
   color: #308dcc;
-}
-.fraction p:last-child {
-  color: #29b765;
 }
 .checked {
   color: #29b765;
 }
-.activity {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
 .footer {
   margin-bottom: 20px;
+}
+.activity tr:first-child td {
+  border: none;
+  color: #308dcc;
+  font-size: 24px;
+}
+.activity tr:last-child td {
+  color: #29b765;
+  font-size: 24px;
 }

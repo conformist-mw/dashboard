@@ -3,7 +3,6 @@
 }
 .tasks {
   margin-top: 25px;
-  margin-bottom:  25px;
 }
 .info {
   padding: 0;
@@ -17,10 +16,9 @@
   background-color: rgba(255,255,255,0.5);
 }
 .header + p {
-  padding: 10px;
-  font-size: 32px;
+  font-size: 48px;
   color: #4caf50;
-  font-weight: bold;
+  font-weight: 300;
 }
 .blue {
   background-color: rgba(76, 175, 80, 0.1);
@@ -37,4 +35,25 @@ tr td {
 footer a {
   color: #426E9E;
   font-size: 18px;
+}
+.fraction {
+  width: 60px;
+  float: left;
+  margin-left: 5%;
+}
+.fraction p {
+  font-size: 24px;
+  line-height: 0;
+}
+.fraction p:first-child {
+  color: #f06292;
+}
+.fraction p:last-child {
+  color: #426E9E;
+}
+.activity {
+  margin-bottom: 30px;
+}
+.activity h3 {
+  margin-bottom: 20px;
 }

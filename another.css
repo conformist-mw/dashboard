@@ -5,19 +5,12 @@
   margin-top: 25px;
 }
 .info {
-  padding: 0;
+  margin-bottom: 30px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  height: 100px;
-  background-color: rgba(76, 175, 80, 0.1);
+  background-color: #f5f5f5;
 }
-.header {
-  font-size: 18px;
-  padding: 5px;
-  background-color: rgba(255,255,255,0.5);
-}
-.header + p {
-  font-size: 48px;
+.info p {
+  font-size: 58px;
   font-weight: 300;
 }
 tr td:first-child {
@@ -52,8 +45,9 @@ footer a {
   color: #29b765;
 }
 .activity {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
-.activity h3 {
+.footer {
   margin-bottom: 20px;
 }

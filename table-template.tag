@@ -8,17 +8,17 @@
 		</thead>
 		<tbody>
 			<tr>
-				<th class="col-md-4">размер очереди
-				(на начало дня)</th>
-				<th each={queue in opts.data['queues']}>{queue}</th>
+				<td class="col-md-4">размер очереди
+				(на начало дня)</td>
+				<td each={queue in opts.data['queues']}>{queue}</td>
 			</tr>
 			<tr>
-				<th class="col-md-4">проверено задач</th>
-				<th each={task in opts.data['tasks']}>{task}</th>
+				<td class="col-md-4">проверено задач</td>
+				<td each={task in opts.data['tasks']}>{task}</td>
 			</tr>
 			<tr>
-				<th class="col-md-4">добавилось задач</th>
-				<th each={add in opts.data['adds']}>{add}</th>
+				<td class="col-md-4">добавилось задач</td>
+				<td each={add in opts.data['adds']}>{add}</td>
 			</tr>
 		</tbody>
 	</table>

@@ -9,48 +9,53 @@
     <link rel="icon" href="favicon.ico">
     <title>Dashboard | DEVMAN</title>
     <link rel="stylesheet" href="static/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="another.css"> -->
+    <link rel="stylesheet" href="static/style.css">
   </head>
   <body>
  <div class="container">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-10 col-md-offset-1">
         <h1>Очередь первичной проверки</h1>
-        <p>Ваша задача: 32-я в очереди</p>
-        <p>Текущий размер очереди: 52 задачи</p>
+        <div class="col-md-offset-1">
+          <h3>Ваша задача: <span class="task_queue">32-я в очереди</span></h3>
+          <h4>Текущий размер очереди: 52 задачи</h4>
+          <h3>Статистика за неделю</h3>
+          <div class="table-responsive">
+            <table-template id="first-check"></table-template>
+          </div>
+        </div>
       </div>
-      <div class="col-md-8 col-md-offset-2 table-responsive">
-        <h3>Статистика за неделю</h3>
-        <table-template id="first-check"></table-template>
-      </div>
-      <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-10 col-md-offset-1">
         <h1>Очередь повторной проверки</h1>
-        <h3>Проверяющий 1</h3>
-        <p>Ваша задача: 32-я в очереди</p>
-        <p>Текущий размер очереди: 52 задачи</p>
+        <div class="col-md-offset-1">
+          <h3>Проверяющий 1</h3>
+          <h3>Ваша задача: <span class="task_queue">32-я в очереди</span></h3>
+          <h4>Текущий размер очереди: 52 задачи</h4>
+          <h3>Статистика за неделю</h3>
+          <div class="table-responsive">
+            <table-template id="second-one"></table-template>
+          </div>
+        </div>
       </div>
-      <div class="col-md-8 col-md-offset-2 table-responsive">
-        <h3>Статистика за неделю</h3>
-        <table-template id="second-one"></table-template>
-      </div>
-      <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-10 col-md-offset-1">
         <h1>Очередь повторной проверки</h1>
-        <h3>Проверяющий 2</h3>
-        <p>Ваша задача: 32-я в очереди</p>
-        <p>Текущий размер очереди: 52 задачи</p>
+        <div class="col-md-offset-1">
+          <h3>Проверяющий 2</h3>
+          <h3>Ваша задача: <span class="task_queue">32-я в очереди</span></h3>
+          <h4>Текущий размер очереди: 52 задачи</h4>
+          <h3>Статистика за неделю</h3>
+          <div class="table-responsive">
+            <table-template id="second-two"></table-template>
+          </div>
+        </div>
       </div>
-      <div class="col-md-8 col-md-offset-2 table-responsive">
-        <h3>Статистика за неделю</h3>
-        <table-template id="second-two"></table-template>
-      </div>
-      <div class="col-md-8 col-md-offset-2">
-    </div>
     <footer>
       <div class="col-md-12 text-right footer">
       <hr>
         <a href="https://vk.com/devmanorg">vk.com/<b>devmanorg</b></a>
       </div>
     </footer>
+    </div>
   </div>
   <script src="static/jquery.min.js"></script>
   <script src="static/bootstrap.min.js"></script>

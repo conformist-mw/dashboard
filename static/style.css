@@ -2,3 +2,12 @@
   min-width: 600px;
   overflow: scroll;
 }
+thead {
+  background-color: #ccc;
+}
+tr th:last-child, tr td:last-child {
+  background-color: #a3b7d2;
+}
+.task_queue {
+  background-color: #FDD664;
+}

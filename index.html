@@ -9,137 +9,75 @@
     <link rel="icon" href="favicon.ico">
     <title>Dashboard | DEVMAN</title>
     <link rel="stylesheet" href="static/bootstrap.min.css">
-    <link rel="stylesheet" href="static/style.css">
+    <!-- <link rel="stylesheet" href="another.css"> -->
   </head>
   <body>
  <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <h1 class="main_title"><b>DEVMAN</b> DashBoard</h1>
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Очередь первичной проверки</h1>
+        <p>Ваша задача: 32-я в очереди</p>
+        <p>Текущий размер очереди: 52 задачи</p>
       </div>
-      <div class="col-md-10 col-md-offset-1 text-center tasks">
-        <div class="col-md-6">
-          <div class="col-md-8 col-md-offset-2 info">
-            <div class="header">
-              <span>Всего сегодня сдано</span>
-            </div>
-            <p class="out">456</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="col-md-8 col-md-offset-2 info">
-            <div class="header">
-              <span>Всего сегодня проверено</span>
-            </div>
-            <p class="checked">654</p>
-          </div>
-        </div>
+      <div class="col-md-8 col-md-offset-2 table-responsive">
+        <h3>Статистика за неделю</h3>
+        <table-template id="first-check"></table-template>
       </div>
-      <div class="col-md-8 col-md-offset-2 activity">
-        <div class="col-md-12 text-center">
-          <h3>Активность за последнюю неделю</h3>
-        </div>
-        <div class="fraction text-center">
-          <p>200</p>
-          <hr>
-          <p>300</p>
-        </div>
-        <div class="fraction text-center">
-          <p>200</p>
-          <hr>
-          <p>300</p>
-        </div>
-        <div class="fraction text-center">
-          <p>200</p>
-          <hr>
-          <p>300</p>
-        </div>
-        <div class="fraction text-center">
-          <p>200</p>
-          <hr>
-          <p>300</p>
-        </div>
-        <div class="fraction text-center">
-          <p>200</p>
-          <hr>
-          <p>300</p>
-        </div>
-        <div class="fraction text-center">
-          <p>200</p>
-          <hr>
-          <p>300</p>
-        </div>
-        <div class="fraction text-center">
-          <p>200</p>
-          <hr>
-          <p>300</p>
-        </div>
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Очередь повторной проверки</h1>
+        <h3>Проверяющий 1</h3>
+        <p>Ваша задача: 32-я в очереди</p>
+        <p>Текущий размер очереди: 52 задачи</p>
       </div>
-      <div class="col-md-10 col-md-offset-1">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th class="col-md-6">Задача</th>
-              <th class="col-md-2">На первичной проверке</th>
-              <th class="col-md-2">На повторной проверке</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="col-md-6">4 json</td>
-              <td class="col-md-2">25</td>
-              <td class="col-md-2">65</td>
-            </tr>
-            <tr>
-              <td class="col-md-6">5 lang frequency</td>
-              <td class="col-md-2">25</td>
-              <td class="col-md-2">65</td>
-            </tr>
-            <tr>
-              <td class="col-md-6">6 password sthrengh</td>
-              <td class="col-md-2">25</td>
-              <td class="col-md-2">65</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="col-md-8 col-md-offset-2 table-responsive">
+        <h3>Статистика за неделю</h3>
+        <table-template id="second-one"></table-template>
       </div>
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Очередь повторной проверки</h1>
+        <h3>Проверяющий 2</h3>
+        <p>Ваша задача: 32-я в очереди</p>
+        <p>Текущий размер очереди: 52 задачи</p>
+      </div>
+      <div class="col-md-8 col-md-offset-2 table-responsive">
+        <h3>Статистика за неделю</h3>
+        <table-template id="second-two"></table-template>
+      </div>
+      <div class="col-md-8 col-md-offset-2">
     </div>
     <footer>
-      <div class="col-md-12 text-right">
+      <div class="col-md-12 text-right footer">
       <hr>
         <a href="https://vk.com/devmanorg">vk.com/<b>devmanorg</b></a>
       </div>
     </footer>
   </div>
   <script src="static/jquery.min.js"></script>
-  <!-- <script src="static/jquery.easypiechart.min.js"></script> -->
   <script src="static/bootstrap.min.js"></script>
-<!--   <script>
-    function getTime(seconds){
-        var minutes = Math.floor(seconds / 60);
-        var seconds = seconds - minutes * 60;
-        return minutes + 'мин. ' + seconds + 'сек.';
-    }
-    $.getJSON('https://tranquil-escarpment-73800.herokuapp.com/get_json.json', function(data){
-    var tasks = data['tasks'];
-    var last_task = data['last_task'];
-    var first_task = data['first_task'];
-    $('#last').text(getTime(last_task));
-    $('#first').text(getTime(first_task));
-    $.each(tasks, function(i, item){
-      $('#' + item['id']).attr('data-percent', item['value']);
-      $(function() {
-        $('#' + item['id']).easyPieChart({
-          scaleColor: false,
-          barColor: "rgba(255,255,255,1)",
-          trackColor: "rgba(255,255,255,0.1)",
-          onStep: function() {
-            $(this.el).find('.percent').text(item['value']);
-          }
-        });
-      });
-    })
-  });
-  </script> -->
+  <script src="table-template.tag" type="riot/tag"></script>
+  <script src="static/riot+compiler.min.js"></script>
+  <script>
+    var data = {
+      dates: [1, 2, 3, 4, 5, 6, 7],
+      tasks: [23, 32, 23, 23, 234, 23, 12],
+      adds: [45, 45, 34, 23, 12, 45, 67],
+      queues: [12, 56, 34, 26, 27, 12, 89]
+    };
+    var data1 = {
+      dates: ['feb 1', 'feb 2', 'feb 3', 'feb 4', 'feb 5', 'feb 6', 'feb 7'],
+      tasks: [23, 32, 27, 213, 34, 233, 43],
+      adds: [45, 89, 34, 23, 12, 45, 67],
+      queues: [12, 36, 34, 46, 27, 12, 89]
+    };
+    var data2 = {
+      dates: ['jan 22', 'jan 23', 'jan 24', 'jan 25', 'jan 26', 'jan 27', 'jan 28'],
+      tasks: [23, 32, 23, 23, 234, 23, 12],
+      adds: [42, 5, 4, 3, 1, 2, 45],
+      queues: [2, 6, 4, 6, 7, 2, 89]
+    };
+    riot.mount('#first-check', 'table-template', {data: data});
+    riot.mount('#second-one', 'table-template', {data: data1});
+    riot.mount('#second-two', 'table-template', {data: data2});
+  </script>
   </body>
 </html>

@@ -18,3 +18,9 @@ tr th:last-child, tr td:last-child {
 .admin {
 	margin-left: -5%;
 }
+.footer {
+	margin-bottom: 25px;
+}
+.footer a {
+	font-size: 18px;
+}

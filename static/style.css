@@ -5,9 +5,16 @@
 thead {
   background-color: #ccc;
 }
+tr td:first-child {
+	font-weight: 800;
+}
 tr th:last-child, tr td:last-child {
   background-color: #a3b7d2;
+  text-align: center;
 }
 .task_queue {
   background-color: #FDD664;
+}
+.admin {
+	margin-left: -5%;
 }
